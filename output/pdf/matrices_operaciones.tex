@@ -1,0 +1,59 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{amsmath}%
+%
+\usepackage{amsmath}%
+\usepackage{graphicx}%
+%
+\begin{document}%
+\normalsize%
+\section{Matrices y Operaciones}%
+\label{sec:MatricesyOperaciones}%
+Matriz generada:%
+\newline%
+\[%
+\begin{bmatrix} 5 & 5 & 5 & 4 & 8 & 9\\4 & 8 & 6 & 6 & 9 & 4\\3 & 9 & 5 & 5 & 7 & 4\\1 & 9 & 1 & 8 & 1 & 7\\9 & 6 & 6 & 4 & 8 & 8\\9 & 3 & 9 & 7 & 2 & 5 \end{bmatrix}%
+\]%
+\newline%
+Determinante:%
+\[%
+31229.999999999978%
+\]%
+\newline%
+Pasos para el cálculo del determinante:%
+\newline%
+Paso 1: Aplicamos la eliminación de Gauss para triangular la matriz.%
+\newline%
+En este paso, se transforman los elementos de la matriz en ceros debajo de la diagonal principal usando operaciones elementales sobre las filas.%
+\newline%
+Paso 2: Calculamos el determinante como el producto de los elementos de la diagonal de la matriz triangular.%
+\newline%
+Fórmula: \$\textbackslash{}text\{det\}(A) = \textbackslash{}prod\_\{i=1\}\^{}\{n\} a\_\{ii\}\$%
+\newline%
+\newline%
+Matriz inversa:%
+\newline%
+\resizebox{\textwidth}{!}{$\displaystyle \begin{bmatrix} -0.22708933717579266 & 0.08184438040345823 & -0.16253602305475515 & 0.039193083573487046 & 0.2795389048991357 & -0.028818443804034602\\-0.08924111431316047 & -0.231796349663785 & 0.3312199807877043 & -0.0006724303554274799 & 0.0662824207492796 & -0.024015369836695492\\0.20086455331412115 & -0.2855907780979829 & 0.4051873198847265 & -0.14380403458213267 & -0.2536023054755044 & 0.1498559077809799\\-0.07492795389048997 & 0.4178674351585017 & -0.4495677233429398 & 0.1296829971181557 & -0.021133525456292063 & 0.01248799231508165\\0.005955811719500485 & 0.27704130643611924 & -0.2309317963496639 & -0.01287223823246876 & 0.030739673390970217 & -0.07877041306436122\\0.20326609029779072 & -0.1900096061479348 & 0.08626320845341028 & 0.012295869356388076 & -0.06916426512968302 & 0.010566762728146026 \end{bmatrix}$}%
+\newline%
+\newline%
+Pasos para calcular la matriz inversa:%
+\newline%
+Paso 1: Calcular la matriz de cofactores.%
+\newline%
+La matriz de cofactores se calcula aplicando la fórmula del cofactor \$C\_\{ij\} = ({-}1)\^{}\{i+j\} \textbackslash{}cdot \textbackslash{}text\{det\}(M\_\{ij\})\$, donde \$M\_\{ij\}\$ es la submatriz resultante al eliminar la fila i y la columna j.%
+\newline%
+Paso 2: Calcular la adjunta.%
+\newline%
+La adjunta de una matriz es la transpuesta de la matriz de cofactores.%
+\newline%
+Paso 3: Calcular la matriz inversa usando la fórmula:%
+\newline%
+\$A\^{}\{{-}1\} = \textbackslash{}frac\{1\}\{\textbackslash{}text\{det\}(A)\} \textbackslash{}cdot \textbackslash{}text\{adj\}(A)\$%
+\newline
+
+%
+\end{document}
